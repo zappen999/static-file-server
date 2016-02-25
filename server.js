@@ -7,8 +7,12 @@ var port = 9009;
 var express = require('express');
 var app = express();
 
-app.use('/', express.static('./static'));
+app.use(express.static(__dirname + '/static'));
 
-app.listen(port, function () {
+app.get('*', function(req, res) {
+  res.sendFile(__dirname + '/static/index.html');
+});
+
+app.listen(port, function() {
   console.log('Serving static contents on port ', port);
 });
