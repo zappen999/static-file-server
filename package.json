@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/solidio/static-file-server.git"
+    "url": "https://github.com/zappen999/static-file-server.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/solidio/static-file-server#readme",
+  "homepage": "https://github.com/zappen999/static-file-server",
   "dependencies": {
     "express": "^4.13.4"
   }
