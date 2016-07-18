@@ -28,6 +28,7 @@ app.get('*', function(req, res) {
   res.sendFile(__dirname + '/static/index.html');
 });
 
-app.listen(port, function() {
+app.listen(port, '127.0.0.1');
+app.on('listening', function() {
   console.log('Serving static contents on port ', port);
 });
